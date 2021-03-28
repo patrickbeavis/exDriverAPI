@@ -1,0 +1,42 @@
+#%RAML 1.0
+---
+title: platform test API
+baseUri: http://127.0.0.1:5000/
+version: v1
+
+/drivers:
+	get:
+		description: Get Json list of all driver records
+	/byDate:
+		/{date}:
+			get:
+				description: Gets Json list of drivers created after supplied date
+				queryParameters:
+					byDate: 
+						displayName: byDate
+						type: string 
+						description: Date in format YYYY-MM-DD
+						example: 2020-02-05
+						required: True
+/driver:
+	/create:
+		post:
+			queryParameters:
+				firstname: 
+					displayName: firstname
+					type: string
+					description: Driver first name
+					example: John
+					required: True
+				lastname:
+					displayName: lastname
+					type: string
+					description: Driver last name
+					example: Smith
+					required: True
+				date_of_birth: 
+					displayName: date_of_birth
+					type: string
+					description: Driver D.O.B in YYYY-MM-DD format
+					example: 1990-04-01
+					required: True

@@ -1,4 +1,3 @@
-# exDriverAPI
 
 Minimal example of RESTful API endpoints for a Driver database.
 

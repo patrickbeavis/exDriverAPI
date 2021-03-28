@@ -1,0 +1,1 @@
+[{"id": 1, "first name": "patrick", "last name": "beavis", "date_of_birth": "1995-06-03", "creation date": "2021-03-28"}]
